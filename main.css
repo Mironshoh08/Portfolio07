@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 100px;
+    align-items: center;
+    position: fixed !important;
+    width: 100%;
+    backdrop-filter: blur(15px) !important;
+    display: flex;
+    justify-content: center;
+}
+
+.mainN1 {
+    height: 700px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__link {
+    color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    align-items: center;
+    display: flex !important;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 15px;
+    font-weight: 600;
+    column-gap: 7px;
+} 
+.navbar__image {
+    width: 30px;
+}
+
+.navbar__image1 {
+    width: 25px;
+}
+
+.maiN1__column1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.mainN1__text1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.mainN1__text2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.mainN1__link1 {
+    background-color: #000;
+    display: flex !important;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 13px 9px 58px 1px rgba(34, 60, 80, 0.55);
+    -moz-box-shadow: 13px 9px 58px 1px rgba(34, 60, 80, 0.55);
+    box-shadow: 13px 9px 58px 1px rgba(34, 60, 80, 0.55);
+    border: #000 4px solid;
+    transition: .4s;
+}
+
+.mainN1__link1:hover {
+    color: #000;
+    border: #000 4px solid;
+    background-color: #fff;
+}
+
+.mainN1__image1 {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.mainN1__column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__link1 {
+    font-size: 20px !important;
+}
+
+.MainN1 {
+    height: 800px !important;
+}
+
+.scrollToTopBtn { 
+    border: none; 
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px; 
+    position: fixed;
+    background: transparent;
+    bottom: 20px;
+    right: 20px; 
+    z-index: 100; 
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: all 0.5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
